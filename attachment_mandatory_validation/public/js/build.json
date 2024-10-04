@@ -1,0 +1,7 @@
+{
+	"js/attachment_mandatory_validation.min.js": [
+		"public/js/purchase_order.js",
+		"public/js/purchase_receipt.js",
+		"public/js/purchase_invoice.js"
+	]
+}
