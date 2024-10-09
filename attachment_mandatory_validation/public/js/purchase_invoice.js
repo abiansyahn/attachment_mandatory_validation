@@ -2,7 +2,7 @@ frappe.ui.form.on("Purchase Invoice", {
     before_workflow_action: async (frm) => {
         let promise = new Promise((resolve, reject) => {
             frappe.dom.unfreeze()
-            if (frm.selected_workflow_action == "Confirm PO") {
+            if (frm.selected_workflow_action == "Submit") {
                 frappe.call({
                     method: "attachment_mandatory_validation.attachment_mandatory.validate_attachment",
                     args: {
